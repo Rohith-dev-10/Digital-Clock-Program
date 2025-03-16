@@ -1,57 +1,45 @@
-# Simple Clock
+# Simple Digital Clock
 
 ## Overview
-A lightweight JavaScript clock that displays the current time. This simple clock provides an easy way to add a real-time clock display to any website.
+A simple digital clock that displays the current time in 12-hour format with AM/PM indicator. The clock features a clean, minimalist design with a blurred background effect.
 
-> **Note:** This project is for practice purposes only.
-
-## Installation
-```bash
-npm install simple-clock
-# or
-yarn add simple-clock
-```
-
-## Usage
-```javascript
-import { SimpleClock } from 'simple-clock';
-
-// Create a new clock instance
-const clock = new SimpleClock('#clock-container');
-
-// Start the clock
-clock.start();
-
-// Stop the clock
-// clock.stop();
-```
-
-HTML:
-```html
-<div id="clock-container"></div>
-```
+> **Note:** This project was made in the learning stage for practice purposes.
 
 ## Features
-- Real-time display of hours, minutes, and seconds
-- Customizable display format (12/24 hour)
-- Low memory footprint
-- No dependencies
+- Real-time clock display (updates every 500ms)
+- 12-hour time format with AM/PM indicator
+- Responsive design
+- Beautiful backdrop blur effect
+- Full-screen background image
 
-## Customization
-```javascript
-// Create a clock with options
-const clock = new SimpleClock('#clock-container', {
-  format: '24h',        // '12h' or '24h'
-  showSeconds: true,    // show or hide seconds
-  updateInterval: 1000  // update interval in milliseconds
-});
+## Project Structure
+- `index.html` - Main HTML structure
+- `index.css` - Styling for the clock
+- `index.js` - JavaScript functionality
+- `image.png` - Background image (not included in repository)
+
+## How It Works
+The clock uses JavaScript's `Date` object to get the current time. The display updates every half-second using `setInterval`. The time is formatted to always show two digits for hours, minutes, and seconds.
+
+## Usage
+Simply open the `index.html` file in a web browser to run the clock.
+
+```
+$ open index.html
 ```
 
-## Browser Support
-- Chrome
-- Firefox
-- Safari
-- Edge
+## Customization
+- Change the background image by replacing `image.png` or updating the URL in `index.css`
+- Adjust the font size, color, and blur effect in the CSS file
+- Modify the update interval in `index.js` (currently set to 500ms)
+
+## Learning Outcomes
+This project demonstrates:
+- Working with the JavaScript Date object
+- DOM manipulation
+- CSS styling techniques (flexbox, backdrop-filter)
+- JavaScript time formatting
+- Using setInterval for recurring functions
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
