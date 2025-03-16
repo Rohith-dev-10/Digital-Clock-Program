@@ -1,9 +1,9 @@
-# Digital-Clock-Program
-
 # Simple Clock
 
 ## Overview
 A lightweight JavaScript clock that displays the current time. This simple clock provides an easy way to add a real-time clock display to any website.
+
+> **Note:** This project is for practice purposes only.
 
 ## Installation
 ```bash
